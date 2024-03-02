@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPLATES</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>TEMPLATES</h1>
+    </header>
+        <template id="templ1">
+            <form method="post" class="card" id="card">
+                <input type="text" name="title" id="title" value="TITLE FOR CARD" placeholder="TITLE FOR CARD">
+                <div class="imageTemp" id="imageTemp">
+                    <textarea name="text" id="describe" class="describe" cols="30" rows="10" placeholder="Your Text Goes Here...">
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet repudiandae maxime quibusdam debitis obcaecati provident
+                    </textarea>
+                    <input type="file" name="image" id="imageIn" class="imageIn">
+                    <img src="../img/image11.png" id="image">
+                </div>
+                <button type="submit" class="apply" onclick="changes()">Apply</button>
+            </form>
+        </template>
+        <template id="templ2">
+            <form method="post" class="card" id="card">
+                <input type="text" id="title" name="title" value="TITLE FOR CARD" placeholder="TITLE FOR CARD">
+                <div class="card2Text" id="card2Text">
+                    <textarea name="text" id="card2Describe" class="card2Describe" cols="30" rows="10" placeholder="Your Text Goes Here...">
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet repudiandae maxime quibusdam debitis obcaecati provident
+                    </textarea>
+                    <textarea name="text" id="card2Describe" class="card2Describe" cols="30" rows="10" placeholder="Your Text Goes Here...">
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet repudiandae maxime quibusdam debitis obcaecati provident
+                    </textarea>
+                </div>
+                <button type="submit" class="apply">Apply</button>
+            </form>
+        </template>
+<main>
+    <section class="forTemplates"></section>
+    <section id="usedTempl"></section>
+</main>
+<script src="scripts/script.js"></script>
+</body>
+</html>

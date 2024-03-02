@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+}
+
+body{
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card{
+    padding: .8rem;
+    width: 10cm;
+    height: 7cm;
+    border: 2px solid #302;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 3px 5px 13px #302;
+    background: linear-gradient(45deg, #eef, #eff, #efe);
+}
+
+#title{
+    color: #402;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    background: none;
+    border: none;
+    margin-bottom: .5rem;
+    outline: none;
+}
+
+#describe{
+    font-size: 20px;
+    color: #dee;
+    word-wrap: break-word;
+    position: absolute;
+    top: 4rem;
+    left: 1.4rem;
+    width: 87%;
+    border: none;
+    outline: none;
+    background: transparent;
+    height: fit-content;
+    z-index: 10;
+}
+
+img{
+    width: 9cm;
+    transition: .4s;
+}
+
+.img{
+    width: 9cm;
+    height: 5.3cm;
+    display: block;
+    transition: .4s;
+}
+
+.imageIn{
+    position: absolute;
+    left: 4rem;
+    font-size: 20px;
+    font-weight: bold;
+    top: -100%;
+    transition: .3s;
+    color: #402;
+    z-index: 10;
+}
+
+.card:hover .imageIn{
+    top: 2cm;
+    transition: .4s;
+}
+
+.hide{
+    bottom: 100%;
+    transition: .4s;
+}
+
+
+/* GENERAL CSS */
+.forTemplates{
+    width: 100%;
+    height: auto;
+    border: 3px solid #302;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card2Text{
+    display: flex;
+    margin-right: .2rem;
+}
+
+.card2Describe{
+    border: none;
+    padding: .3rem;
+    background: none;
+    width: 50%;
+    height: auto;
+    outline: none;
+}
+
+button{
+    position: absolute;
+    bottom: -100%;
+    z-index: 100;
+    padding: .5rem;
+    background: #32f;
+    border: none;
+    outline: none;
+    color: #a9f;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+button:hover{
+    background: #65f;
+    color: #cbf;
+    transition: .3s;
+}
+
+.card:hover button{
+    bottom: 2rem;
+    transition: .4s;
+}

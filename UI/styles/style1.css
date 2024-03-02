@@ -1,0 +1,391 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: monospace, sans-serif, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    transition: .2s;
+}
+
+body{
+    position: fixed;
+}
+
+/* header */
+header{
+    background: linear-gradient(to right, #0cd, rgb(103, 2, 170));
+    padding: .3cm;
+    color: #fff;
+    font-size: 23px;
+    width: 33.87cm;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navBar div{
+    cursor: pointer;
+}
+
+/* main */
+main{
+    background: #0cd;
+    position: absolute;
+    top: 1.3cm;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+}
+
+/* right content */
+.rightContect{
+    width: 13cm;
+    height: 14.3cm;
+    background: #101;
+    display: flex;
+}
+
+/* optgroup */
+.optGroup{
+    background: #222;
+    width: 3.2cm;
+    height: 14.3cm;
+    line-height: 4.5rem;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 2rem;
+    overflow-y: auto;
+}
+
+.optGroup i{
+    font-size: 30px;
+}
+
+.optGroup div{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.optGroup div:hover{
+    animation: scaleUp infinite 3s;
+}
+
+
+.options{
+    width: 9cm;
+    height: 14.3cm;
+    background: #303;
+    padding:  0 1.2rem;
+    overflow-y: auto;
+}
+
+.options #showDesign{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.options img{
+    width: 3.5cm;
+    height: 2.2cm;
+    margin-bottom: 1.4rem;
+}
+
+.templates:hover{
+    animation-name: scaleUp;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.options img:active{
+    border: 3px solid #0cd;
+    filter: brightness(90%);
+}
+
+.isearch{
+    background: #303;
+    position: sticky;
+    top: 0;
+    height: 2cm;
+    padding: 1rem 0;
+    z-index: 1;
+}
+
+#search{
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 1cm;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    text-indent: 1rem;
+    font-size: 17px;
+    color: #101;
+}
+
+.leftContect{
+    background: #eed;
+    width: 100%;
+    height: 14.3cm;
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+}
+
+.top{
+    width: 100%;
+    height: 2.5rem;
+    background: #fff;
+    padding: .7rem;
+    padding-left: 1rem;
+    position: fixed;
+}
+
+.middle{
+    padding: 1cm;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.3rem;
+    padding: 1cm 3cm 0 3cm;
+    width: fit-content;
+}
+
+.middle img{
+    width: 15cm;
+    height: 8cm;
+}
+
+.middle div:hover{
+    outline: 2px solid #0cd;
+    border-radius: 5px;
+}
+
+.bottom{
+    background: #fff;
+    height: 3cm;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    padding: 2rem;
+    overflow-x: auto;
+    width: 23cm;
+}
+#bottom{
+    display: grid;
+    grid-template-columns: repeat(100, 1fr);
+    overflow-x: auto;
+}
+
+.bottom div{
+    margin-right: 1rem;
+}
+
+.bottom img{
+    width: 2.3cm;
+    height: 1.1cm;
+    filter: brightness(90%);
+}
+
+.bottom img:hover{
+    border: 2px solid #0cd;
+    border-radius: 5px;
+}
+
+.numberOfPages{
+    position: absolute;
+    left: 1.8rem;
+    bottom: 2rem;
+    width: 2rem;
+    height: 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background: #222;
+    color: #eee;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    z-index: 5;
+}
+
+/* elements */
+.rectangles, .ovals, .polygons, .unUniforms{
+    display: flex;
+    margin-right: 1rem;
+    overflow-x: auto;
+}
+.rectangles div, .ovals div, .polygons div, .unUniforms div{
+    margin-right: 1rem;
+}
+.rectangles div:hover, .ovals div:hover, .polygons div:hover, .unUniforms div:hover{
+    animation:  scaleUp 2s infinite;
+}
+#showElements img{
+    width: 2cm;
+    height: 2cm;
+}
+.elmtHeads{
+    color: #eee;
+    background: #101;
+    margin-bottom: 1rem;
+}
+
+/* show selected option groups */
+#showDesign{
+    display: none;
+}
+#showElements{
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* text */
+#addTextBox{
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    color: #101;
+    padding: .8rem;
+    font-size: 18px;
+    font-weight: 600;
+    background: #eee;
+    border-radius: 30px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+#addTextBox:active{
+    background: #303;
+    color: #eed;
+    transition: .2s;
+}
+.showText{
+    display: flex;
+    flex-direction: column;
+}
+.allFonts{
+    color: #eed;
+    font-size: 23px;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.allFonts div{
+    padding: .8rem;
+    height: 3.5rem;
+    text-align: center;
+}
+.allFonts div:hover{
+    animation: scaleUp 1s infinite;
+    background: #0cd;
+    border-radius: 20px;
+    border: none;
+}
+.allFonts div:active{
+    background: #059;
+    transition: .2s;
+}
+
+/* uploads */
+.showUpload{
+    display: flex;
+    flex-direction: column;
+    color: #101;
+    text-align: center;
+}
+.showUpload div{
+    margin-bottom: 1rem;
+}
+.bringUpload{
+    background: #eee;
+    border-radius: 30px;
+    height: 3rem;
+    padding: .5rem;
+    font-weight: 600;
+    font-size: 23px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.yourUpload{
+    background: #eed;
+    height: 2rem;
+    border-radius: 20px;
+    padding: .3rem;
+}
+
+/* brushes */
+.showDraw{
+    display: flex;
+    flex-direction: column;
+}
+.color{
+    color: #eee;
+    font-size: 20px;
+}
+.color input{
+    margin-left: 2cm;
+}
+.brushes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+}
+.brushes img{
+    width: 3cm;
+    height: 1.8cm;
+    filter: invert(100%);
+}
+.brushes img:hover{
+    animation: scaleUp 2s infinite;
+}
+.brushes img:active, .fill img:active{
+    border: 2px solid #202;
+    filter: invert(80%);
+}
+.fill{
+    text-align: center;
+    color: #eee;
+    font-size: 20px;
+    font-weight: 600;
+}
+.fill img{
+    filter: invert(100%);
+}
+
+
+/* Animations */
+@keyframes grow {
+    0% {transform: scale(1.0); transition: .1s;}    
+    10% {transform: scale(1.02); transition: .1s;}    
+    20% {transform: scale(1.0); transition: .1s;}    
+    30% {transform: scale(1.02); transition: .1s;}    
+    40% {transform: scale(1.0); transition: .1s;}    
+    50% {transform: scale(1.02); transition: .1s;}    
+    60% {transform: scale(1.0); transition: .1s;}    
+    70% {transform: scale(1.02); transition: .1s;}    
+    80% {transform: scale(1.0); transition: .1s;}    
+    90% {transform: scale(1.02); transition: .1s;}    
+    100% {transform: scale(1.0); transition: .1s;}     
+}
+
+@keyframes scaleUp {
+    0% {transform: scaleY(1.0); transition: .1s;}
+    10% {transform: scaleY(1.06); transition: .1s;}
+    20% {transform: scaleY(1.0); transition: .1s;}
+    60% {transform: scaleY(1.06); transition: .1s;}
+    40% {transform: scaleY(1.0); transition: .1s;}
+    50% {transform: scaleY(1.06); transition: .1s;}
+    60% {transform: scaleY(1.0); transition: .1s;}
+    70% {transform: scaleY(1.06); transition: .1s;}
+    80% {transform: scaleY(1.0); transition: .1s;}
+    90% {transform: scaleY(1.06); transition: .1s;}
+    100% {transform: scaleY(1.0); transition: .1s;}
+}

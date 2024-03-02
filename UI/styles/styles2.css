@@ -1,0 +1,323 @@
+.allTemplates{
+    width: 16cm;
+    height: 8cm;
+    margin-left: 2cm;
+}
+
+/* TEMPLATE 1 */
+#template1{
+    background: #fff;
+    text-align: center;
+}
+#template1 h3{
+    color: #101;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 1rem;
+    outline: none;
+}
+.templ1Heads{
+    color: #101;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+}
+#template1 .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}#template1 .cards i{
+    font-size: 40px;
+}
+#template1 .cards div{
+    border: 2px solid;
+    margin: 1rem;
+    padding: .7rem .4rem 1rem;
+    max-width: 4cm;
+    max-height: 6cm;
+    overflow: hidden;
+}
+#template1 .cards div button{
+    width: 100%;
+    background: #111;
+    border: none;
+    color: #eed;
+    padding: .4rem;
+    border-radius: 10px;
+    margin-top: .7rem;
+}
+
+/* TEMPLATE 2 */
+#template2{
+    position: relative;
+    background: #fff;
+    padding: 1rem;
+    transition: .2s;
+}
+#template2 h3{
+    left: 10%;
+    font-size: 25px;
+}
+#template2 *{
+    position: absolute;
+    transition: .2s;
+}
+.templ2Svg{
+    width: 94.5%;
+    height: 3.4cm;
+    overflow: hidden;
+    top: 2.1cm;
+}
+.templ2Svg div:hover{
+    border-radius: 50%;
+}
+.templ2Circles{
+    width: 2cm;
+    height: 2cm;
+    border-radius: 50%;
+    top: 3rem;
+    color: #fff;
+    padding-left: 1.4rem;
+    padding-top: 1.4rem;
+    font-size: 27px;
+}
+#templ2Circle1{
+    left: 1.4cm;
+    background: #e54;
+}
+#templ2Circle2{
+    left: 4.9cm;
+    background: #e94;
+}
+#templ2Circle3{
+    left: 8.4cm;
+    background: #e54;
+}
+#templ2Circle4{
+    left: 11.8cm;
+    background: #e94;
+}
+.templ2Para{
+    font-size: 11px;
+    color: #101;
+    text-align: center;
+    outline: none;
+    border: none;
+    max-width: 5cm;
+}
+#tepm2p1{
+    top: 1.8cm;
+    left: 9rem;
+}
+#tepm2p2{
+    top: 1.8cm;
+    left: 10.5cm;
+}
+#tepm2p3{
+    top: 6.5cm;
+    left: 1.2rem;
+}
+#tepm2p4{
+    top: 6.5cm;
+    left: 7.5cm;
+}
+.templ2span{
+    font-size: 18px;
+    font-weight: 500;
+}
+#tepm2span1{
+    top: 6rem;
+    left: 5.8cm;
+}
+#tepm2span2{
+    top: 6rem;
+    left: 12.7cm;
+}
+#tepm2span3{
+    top: 13.7rem;
+    left: 2.3cm;
+}
+#tepm2span4{
+    top: 13.7rem;
+    left: 9.3cm;
+}
+
+/* TEMPLATE 3 */
+#template3{
+    background: #fff;
+    padding: 2rem;
+}
+#template3 p, #template3 h3{
+    outline: none;
+    max-height: 1cm;
+    overflow: hidden;
+}
+.templ3top{
+    text-align: center;
+    color: #101;
+    line-height: 2rem;
+}
+.templ3top p{
+    font-size: 16px;
+}
+.templ3top h3{
+    font-size: 36px;
+}
+.templ3middle{
+    text-align: left;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    line-height: 3rem;
+    padding: 1rem;
+}
+.templ3middle p{
+    border-bottom: 2px solid #101;
+}
+
+/* TEMPLATE 4 */
+#template4{
+    background: linear-gradient(120deg, #3b9, #3aa);
+    padding: 1cm;
+}
+#template4 *{
+    position: relative;
+    color: #eed;
+    font-weight: 600;
+    outline: none;
+}
+
+/* TEMPLATE 5 */
+#template5{
+    background: linear-gradient(rgb(15, 117, 92), #3b9);
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    line-height: 2rem;
+}
+#template5 i{
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    font-size: 60px;
+}
+.ico1{
+    width: 100%;
+    height: 2cm;
+    float: calc(20%);
+    outline: none;
+}
+#template5 h3{
+    font-size: 27px;
+    word-spacing: .5rem;
+    margin-bottom: .6rem;
+    outline: none;
+}
+#template5 h4{
+    font-size: 18px;
+    margin-bottom: .7rem;
+    outline: none;
+}
+#template5 p{
+    font-size: 11px;
+    line-height: 1rem;
+    padding:  0 4rem;
+    outline: none;
+}
+
+/* TEMPLATE 8 */
+#template8{
+    position: sticky;
+    background: #fff;
+    padding: .4rem;
+    z-index: 10;
+}
+#smallHeader{
+    position: absolute;
+    padding: .3rem;
+    font-size: 12px;
+    color: #101;
+    outline: none;
+}
+#smallHeader i{
+    font-size: 27px;
+}
+.templ8Left{
+    width: 9.7cm;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+}
+.templ8Left h3{
+    margin-bottom: .3rem;
+    outline: none;
+}
+.templ8Left p{
+    font-size: 11px;
+    outline: none;
+}
+.templ8Left #ooo{
+    overflow: hidden;
+    max-height: 2rem;
+}
+.templ8Bottom{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+.templ8Bottom i{
+    font-size: 20px;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+}
+.templ8Bottom div{
+    margin: .5rem;
+    padding: .5rem;
+    max-width: 4.3cm;
+    max-height: 4cm;
+    overflow: hidden;
+    background: #e94;
+}
+.templ8div2{
+    height: 4cm;
+}
+.templ8Right{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 5cm;
+    height: 6.7cm;
+}
+.templ8Right img{
+    width: 100%;
+    height: 100%;
+}
+
+/* six TEMPLATE */
+#template6{
+    position: absolute;
+    background: #fff;
+    z-index: 10;
+}
+#template6 img{
+    width: 4cm;
+    height: 4cm;
+    position: absolute;
+    /* background: none; */
+}
+#template6 #flower1{
+    top: 0;
+    left: 0;
+}
+#template6 #flower2{
+    top: 0;
+    right: 0;
+}
+#template6 #flower3{
+    bottom: 0;
+    left: 0;
+}
+#template6 #flower4{
+    bottom: 0;
+    right: 0;
+}
