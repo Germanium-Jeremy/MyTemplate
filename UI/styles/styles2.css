@@ -224,6 +224,116 @@
     outline: none;
 }
 
+/* six TEMPLATE */
+#template6{
+    position: relative;
+    background: #fff;
+    padding: 2.3cm 3cm;
+    text-align: center;
+    overflow: hidden;
+}
+#template6 img{
+    width: 5cm;
+    height: 5cm;
+    position: absolute;
+}
+#template6 #flower1{
+    top: -4rem;
+    left: -2rem;
+}
+#template6 #flower2{
+    top: -4rem;
+    right: -2rem;
+}
+#template6 #flower3{
+    bottom: -4rem;
+    left: -2rem;
+}
+#template6 #flower4{
+    bottom: -4rem;
+    right: -2rem;
+}
+#template6Text{
+    width: 9cm;
+    height: 3.5cm;
+}
+#template6Text h3{
+    font-size: 30px;
+    overflow: hidden;
+    width: 9cm;
+    height: 1cm;
+    margin-bottom: .5rem;
+    outline: none;
+    font-family: sofia;
+}
+#template6Text p{
+    font-size: 15px;
+    outline: none;
+}
+
+/* TEMPLATE 7 */
+#template7{
+    background: url(../../img/background.avif);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    z-index: 10;
+}
+.template7left{
+    border: 2px solid #303;
+    border-left: none;
+    margin-top: 1.3rem;
+    width: 10cm;
+    height: 7cm;
+    display: flex;
+}
+.template7left .someRight{
+    background: #ccc;
+    width: 5cm;
+    height: 6.9cm;
+}
+.template7left .someLeft{
+    background: #eee;
+    width: 5cm;
+    height: 6.9cm;
+}
+.template7left .someText{
+    position: absolute;
+    top: 2cm;
+    left: .4rem;
+    width: 10cm;
+    color: #101;
+}
+.template7left .someText p{
+    padding-left: 1rem;
+    font-family: sofia;
+    overflow: hidden;
+    outline: none;
+}
+.template7left .someText > p{
+    height: 2cm;
+}
+.template7left .someText p + p{
+    height: 3.5cm;
+}
+.template7left .someText p strong{
+    font-size: xx-large;
+}
+.template7right{
+    height: 7cm;
+    margin-top: 1.3rem;
+    width: 4.5cm;
+    margin-left: 2rem;
+}
+.template7right img{
+    width: 3cm;
+    height: 5cm;
+    margin-top: 1.5cm;
+    margin-left: 1cm;
+    filter: brightness(150%);
+    transform: rotate(20deg);
+}
+
 /* TEMPLATE 8 */
 #template8{
     position: sticky;
@@ -293,31 +403,3 @@
     height: 100%;
 }
 
-/* six TEMPLATE */
-#template6{
-    position: absolute;
-    background: #fff;
-    z-index: 10;
-}
-#template6 img{
-    width: 4cm;
-    height: 4cm;
-    position: absolute;
-    /* background: none; */
-}
-#template6 #flower1{
-    top: 0;
-    left: 0;
-}
-#template6 #flower2{
-    top: 0;
-    right: 0;
-}
-#template6 #flower3{
-    bottom: 0;
-    left: 0;
-}
-#template6 #flower4{
-    bottom: 0;
-    right: 0;
-}

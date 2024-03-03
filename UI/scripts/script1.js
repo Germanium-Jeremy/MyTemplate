@@ -92,6 +92,20 @@ $(document).ready(function(){
         $("#middle").append(template5content)
         $("#bottom").append(templ5)
     });
+    $("#templ6").click(function(){
+        const templ6 = $("#templ6").clone()
+        umusangwa.hide()
+        const template6content = $("#sixthTemplate").contents().clone()
+        $("#middle").append(template6content)
+        $("#bottom").append(templ6)
+    });
+    $("#templ7").click(function(){
+        const templ7 = $("#templ7").clone()
+        umusangwa.hide()
+        const template7content = $("#seventhTemplate").contents().clone()
+        $("#middle").append(template7content)
+        $("#bottom").append(templ7)
+    });
     $("#templ8").click(function(){
         const templ8 = $("#templ8").clone()
         umusangwa.hide()
@@ -101,14 +115,14 @@ $(document).ready(function(){
     });
 
 // START CHANGING THE FONT FAMILY WHEN A FONT IS CLICKED
-    let monospace = $("#monospace").click(function(){
-        const allText = $("p","h3","h4","h2").css(
-            "font-family", "monospace"
-        )
-    })
-    let micro = $("#micro").click(function(){
-        const allText = $("p").css(
-            "font-family", "Micro 5"
-        )
-    })
+    // let monospace = $("#monospace").click(function(){
+    //     const allText = $("p","h3","h4","h2").css(
+    //         "font-family", "monospace"
+    //     )
+    // })
+    // let micro = $("#micro").click(function(){
+    //     const allText = $("p").css(
+    //         "font-family", "Micro 5"
+    //     )
+    // })
 });
